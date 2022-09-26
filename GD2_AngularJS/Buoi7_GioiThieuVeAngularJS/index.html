@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myModule">
+  <!-- abc: goi la module -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body ng-controller="myController">
+    <!-- Module: la 1 container. Nơi chua các 
+        thành phần : filter, 
+        controller, service, directive....
+        Cách khai báo 1 module 
+            var myApp = angular.module("tenModule",[])
+            Gom 2 tham so : 
+                ten module
+                cac DI truyen vao neu co
+        Controller: La 1 ham js.
+         Tac dung la xay dung lên model 
+         để hiển thị lên view
+        Cách khai báo 1 controller 
+            myApp.controller("tenController",tenHamXuLy)
+     -->
+    {{message}}
+    <br />
+    Name : {{e.name}}
+    <br />
+    Gender : {{e.gender}}
+    <br />
+    DOB : {{e.dob}} {{i[0]}}
+    <br />
+    {{i[1]}}
+    <br />
+    {{i[2]}}
+    <script src="../js/angular.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>

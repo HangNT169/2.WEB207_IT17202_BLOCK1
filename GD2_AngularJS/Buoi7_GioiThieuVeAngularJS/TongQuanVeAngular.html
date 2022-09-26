@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body ng-app>
+    <!-- 1. Gioi thieu
+         2. Ưu nhược điểm 
+         3. Hướng dẫn cài đặt
+         4. Các thành phần chính của angular js 
+            + ng-app : là 1 directive 
+            + ng-model / ng-controller.....
+        => Thường nên để ng-app ở html hoặc body
+     -->
+    <div>
+      <input type="text" ng-model="name" />
+      <div>{{name}}</div>
+    </div>
+
+    <div>10 + 20 = {{10+20}}</div>
+
+    <script src="../js/angular.min.js"></script>
+  </body>
+</html>
