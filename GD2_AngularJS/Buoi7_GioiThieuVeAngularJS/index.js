@@ -1,27 +1,25 @@
-// B1: Tao module
+//B1: Khoi tao 1 module
 var myApp = angular.module("myModule", []);
 
 // B2: Tao controller
-// C1: Viet ham cu the
-// myApp.controller("myController", hello);
+// C1: Ham cu the
+// myApp.controller("myController", helloWorld);
 
-// // scope: Là 1 service.
-// // Là cầu nối giữa model vs view
-// function hello($scope) {
+// // scope: la 1 service. Dung de ket noi giua model va view
+// function helloWorld($scope) {
 //   $scope.message = "Ahihi do ngoc";
 // }
 
-// C2: ham k tuong minh
+//  C2: Ham nac danh
 myApp.controller("myController", function ($scope) {
   $scope.message = "hihihi";
-  // Cach khoi tao 1 Object trong js
+  // Cach tao Object trong JS
   var employee = {
-    name: "Hang",
-    gender: "Nu",
-    dob: "26/09/2022",
+    firstName: "Hang",
+    lastName: "Nguyen",
+    gender: "Female",
   };
   $scope.e = employee;
-
-  var info = ["hihi", "hihi1", "hihi2"];
+  var info = ["hihi1", "hihi2"];
   $scope.i = info;
 });
