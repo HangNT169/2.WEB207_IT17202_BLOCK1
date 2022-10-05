@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myModule">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 1. Khai niem ve directive
+        - là 1 tính năng của angular js . 
+        => Giúp xây dựng các thẻ mở rộng cho html 
+        - Các directive có sẵn dạng : ng- tên directive 
+        Chia làm 5 dạng cơ bản :
+            + Liên quan tới application: ng-app, 
+               ng-controller: Khai báo 1 controller trong view
+            + forms : ng-pattern, ng-minlength.....
+            + template : ng-repeat, ng-include,.....
+            + operation : ng-click, ng-change ....
+            + binding: ng-model,ng-bind.... 
+        - Các directive chính :
+            + ng-app: khởi tạo ứng dụng 
+            + ng-model : gắn kết dữ liệu từ model vào controller 
+            + ng-init : Khởi tạo dữ liệu cho ứng dụng
+        2. Các loại directive 
+         - Có sẵn
+         - Tự tạo directive 
+    -->
+    <div ng-controller="classController" ng-init="message='ahihih'">
+      {{message}}
+      <div welcome-text-hihi></div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>

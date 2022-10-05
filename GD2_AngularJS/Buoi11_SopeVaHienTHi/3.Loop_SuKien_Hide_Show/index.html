@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myModule">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body ng-controller="myController">
+    <table>
+      <thead>
+        <td>ID</td>
+        <td>Name</td>
+        <td>Gender</td>
+      </thead>
+      <tbody>
+        <tr ng-repeat="e in employees">
+          <td>{{e.id}}</td>
+          <td>{{e.name}}</td>
+          <td>
+            <!-- <span ng-if="e.gender==true">Nam</span>
+            <span ng-if="e.gender==false">Nu</span> -->
+            <!-- <div ng-switch="e.gender">
+              <span ng-switch-when="true">Nam</span>
+              <span ng-switch-default>Nu</span>
+            </div> -->
+            <span ng-show="e.gender">Nam</span>
+            <span ng-hide="e.gender">Nu</span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
